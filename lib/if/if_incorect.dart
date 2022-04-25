@@ -1,3 +1,4 @@
+import 'package:cargo_app/if/search.dart';
 import 'package:flutter/material.dart';
 
 class IfIncorrect extends StatefulWidget {
@@ -33,7 +34,20 @@ class _IfIncorrectState extends State<IfIncorrect> {
                     InputDecoration(
                         hintText: "Номер заказа",
                         border: InputBorder.none,
-                        suffixIcon: Icon(Icons.search)
+                        suffixIcon: GestureDetector(
+                          onTap: (){
+
+                          },
+                            child: GestureDetector(
+                              onTap: (){
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => const Search(),
+                                  ),
+                                );
+                              },
+                                child: Icon(Icons.search)))
                     ),
 
                   ),
