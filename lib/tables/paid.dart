@@ -76,17 +76,7 @@ class _PaidState extends State<Paid> {
     child: Text('Дата Отправки'),
     ),
     ),
-    // Container(
-    //   width: 155,
-    //   height: 50,
-    //   decoration: BoxDecoration(
-    //       color: Colors.blue,
-    //       borderRadius: BorderRadius.circular(10)
-    //   ),
-    //   child: Center(
-    //     child: Text('Дата Отправки'),
-    //   ),
-    // )
+
 
 
     ]),
@@ -97,10 +87,10 @@ class _PaidState extends State<Paid> {
     buildRow(['24.02.22', '26.02.22', 'SU 123', ]),
     buildRow(['24.02.22', '26.02.22', 'SU 123', ]),
     buildRow(['24.02.22', '26.02.22', 'SU 123', ]),
-    buildRow(['24.02.22', '26.02.22', 'SU 123',]),
     buildRow(['24.02.22', '26.02.22', 'SU 123', ]),
     buildRow(['24.02.22', '26.02.22', 'SU 123', ]),
-    buildRow(['24.02.22', '26.02.22', 'SU 123',]),
+    buildRow(['24.02.22', '26.02.22', 'SU 123', ]),
+    buildRow(['24.02.22', '26.02.22', 'SU 123', ]),
 
 
     ],

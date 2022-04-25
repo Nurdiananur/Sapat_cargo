@@ -1,15 +1,14 @@
-import 'package:cargo_app/my_orders/table_avtive.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class Diteals extends StatefulWidget {
-  const Diteals({Key? key}) : super(key: key);
+class Deatail3 extends StatefulWidget {
+  const Deatail3({Key? key}) : super(key: key);
 
   @override
-  State<Diteals> createState() => _DitealsState();
+  State<Deatail3> createState() => _Deatail3State();
 }
 
-class _DitealsState extends State<Diteals> {
+class _Deatail3State extends State<Deatail3> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,8 +21,8 @@ class _DitealsState extends State<Diteals> {
           width: 343,
           height: 525,
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(20),
-            color: Color(0xffF3F3F3)
+              borderRadius: BorderRadius.circular(20),
+              color: Color(0xffF3F3F3)
           ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -56,42 +55,29 @@ class _DitealsState extends State<Diteals> {
                       width: 140,
                       height: 40,
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        color: Color(0xffEAEAEA)
+                          borderRadius: BorderRadius.circular(10),
+                          color: Color(0xffEAEAEA)
                       ),
                       child: Center(
                         child: Text(
-                          'Данные заказа'
+                            'Данные заказа'
                         ),
                       ),
                     ),
 
-                    GestureDetector(
-                      onTap: (){
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const TableActive(),
-                          ),
-                        );
-                      },
-                      child: Container(
-                        width: 140,
-                        height: 40,
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            color: Color(0xff0E77EF)
-                        ),
-                        child: Center(
-                          child: Text(
-                              'Данные об активе'
-                          ),
+                    Container(
+                      width: 140,
+                      height: 40,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: Color(0xff0E77EF)
+                      ),
+                      child: Center(
+                        child: Text(
+                            'Данные об активе'
                         ),
                       ),
                     ),
-
-
-
                   ],
                 ),
               ),
@@ -99,57 +85,57 @@ class _DitealsState extends State<Diteals> {
                 padding: const EdgeInsets.all(17),
                 child: Column(
                   children: [
-                  Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
 
-                    Row(
-                      children: [
-                        SvgPicture.asset(
-                          'assets/icons/frm1.svg',
-                          color: Colors.blue,
+                        Row(
+                          children: [
+                            SvgPicture.asset(
+                              'assets/icons/frm1.svg',
+                              color: Colors.blue,
+                            ),
+                            Text('Сумма:'),
+                            Text('986 р.')
+                          ],
                         ),
-                        Text('Сумма:'),
-                        Text('986 р.')
+                        Row(
+                          children: [
+                            SvgPicture.asset(
+                              'assets/icons/frm3.svg',
+                              color: Colors.blue,
+                            ),
+                            Text('Способ оплаты:'),
+                            Text('В долг', style: TextStyle(color: Colors.red),)
+                          ],
+                        ),
                       ],
                     ),
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        SvgPicture.asset(
-                          'assets/icons/frm3.svg',
-                          color: Colors.blue,
+                        Row(
+                          children: [
+                            SvgPicture.asset(
+                              'assets/icons/frm2.svg',
+                              color: Colors.blue,
+                            ),
+                            Text('Оплачено:', style: TextStyle(color: Colors.green),),
+                            Text('400 р.')
+                          ],
                         ),
-                        Text('Способ оплаты:'),
-                        Text('В долг', style: TextStyle(color: Colors.red),)
+                        Row(
+                          children: [
+                            SvgPicture.asset(
+                              'assets/icons/frm4.svg',
+                              color: Colors.blue,
+                            ),
+                            Text('Остаток:',style: TextStyle(color: Colors.red),),
+                            Text('586 р.')
+                          ],
+                        ),
                       ],
                     ),
-                  ],
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Row(
-                      children: [
-                        SvgPicture.asset(
-                          'assets/icons/frm2.svg',
-                          color: Colors.blue,
-                        ),
-                        Text('Оплачено:', style: TextStyle(color: Colors.green),),
-                        Text('400 р.')
-                      ],
-                    ),
-                    Row(
-                      children: [
-                        SvgPicture.asset(
-                          'assets/icons/frm4.svg',
-                          color: Colors.blue,
-                        ),
-                        Text('Остаток:',style: TextStyle(color: Colors.red),),
-                        Text('586 р.')
-                      ],
-                    ),
-                  ],
-                ),
                     SizedBox(height: 19,),
                     Row(
                       children: [
@@ -258,10 +244,9 @@ class _DitealsState extends State<Diteals> {
                     ),
 
                   ],
-              ),
+                ),
               )
             ],
-
           ),
 
         ),

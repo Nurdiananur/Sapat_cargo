@@ -1,6 +1,6 @@
 import 'package:cargo_app/if/if_incorect.dart';
-import 'package:cargo_app/pain/duty.dart';
-import 'package:cargo_app/pain/paid.dart';
+import 'package:cargo_app/tables/duty.dart';
+import 'package:cargo_app/tables/paid.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

@@ -114,7 +114,7 @@ class _MyProfileState extends State<MyProfile> {
                height: 54,
                child:  Row(
                  children: [
-                   Icon(Icons.transgender_rounded,
+                   Icon(Icons.female,
                      size: 30, color: Colors.blue,),
                    SizedBox(width: 20,),
                    Text('Жен', style: AppTextStyles.profile,),
