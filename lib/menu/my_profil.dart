@@ -12,6 +12,30 @@ class MyProfile extends StatefulWidget {
 }
 
 class _MyProfileState extends State<MyProfile> {
+
+
+
+  Widget buildEditIcon(Color color) => buildCircle(
+    color: color,
+    all: 8,
+
+   child: Icon(
+     Icons.edit,
+     color: Colors.white,
+     size: 10,
+   )
+  );
+
+  Widget buildCircle({
+  required Widget child,
+    required double all,
+    required Color color,
+}) => ClipOval(
+    child: Container(padding: EdgeInsets.all(all),
+      color: color,
+      child: child,
+    ),
+  );
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,11 +48,25 @@ class _MyProfileState extends State<MyProfile> {
            children: <Widget>[
             Padding(
               padding: const EdgeInsets.only(left: 128, right: 127, top: 26),
-              child: SizedBox(
-                height: 120,
-                width: 120,
-                child: Image.asset('assets/marina.png'),
+              child: Stack(
+                children:[
+                  Container(
+                  height: 120,
+                  width: 120,
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        fit: BoxFit.fill,
+                        image: AssetImage('assets/marina.png'),
+                      )
+                    ),
+                    // child: Image.asset('assets/marina.png'),
 
+                  ),
+                  Positioned(
+                    bottom: 80,
+                      right: 9,
+                      child: buildEditIcon(Colors.blue))
+        ]
               ),
             ),
              SizedBox(height: 49,),
