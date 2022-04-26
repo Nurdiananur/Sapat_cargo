@@ -6,6 +6,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+import '../styles/app_colors.dart';
+
 class Myorder extends StatefulWidget {
   const Myorder({Key? key}) : super(key: key);
 
@@ -51,11 +53,11 @@ class _MyorderState extends State<Myorder> {
                             children: [
                               SvgPicture.asset(
                                 'assets/icons/build.svg',
-                                color: Colors.blue,
+                                color: AppColors.blue,
                               ),
                               Text('23.03.22-25.03.22'),
                               SizedBox(width: 90,),
-                              Text('№ ЛК-131',style: TextStyle(color: Colors.blue, fontSize: 16),),
+                              Text('№ ЛК-131',style: TextStyle(color: AppColors.blue, fontSize: 16),),
                             ],
                           ),
             ),
@@ -78,7 +80,7 @@ class _MyorderState extends State<Myorder> {
                                     ),
                                   );
                                 },
-                                child: Text('Подробнее...', style: TextStyle(color: Colors.black26),),
+                                child: Text('Подробнее...', style: TextStyle(color: AppColors.black26),),
                               )
                             ],
                           ),
@@ -112,11 +114,11 @@ class _MyorderState extends State<Myorder> {
                             children: [
                               SvgPicture.asset(
                                 'assets/icons/build.svg',
-                                color: Colors.blue,
+                                color: AppColors.blue,
                               ),
                               Text('23.03.22-25.03.22'),
                               SizedBox(width: 90,),
-                              Text('№ ЛК-131',style: TextStyle(color: Colors.blue, fontSize: 16),),
+                              Text('№ ЛК-131',style: TextStyle(color: AppColors.blue, fontSize: 16),),
                             ],
                           ),
                         ),
@@ -139,7 +141,7 @@ class _MyorderState extends State<Myorder> {
                                     ),
                                   );
                                 },
-                                child: Text('Подробнее...',style: TextStyle(color: Colors.black26),),
+                                child: Text('Подробнее...',style: TextStyle(color: AppColors.black26),),
                               )
                             ],
                           ),
@@ -177,11 +179,11 @@ class _MyorderState extends State<Myorder> {
                             children: [
                               SvgPicture.asset(
                                 'assets/icons/build.svg',
-                                color: Colors.blue,
+                                color: AppColors.blue,
                               ),
                               Text('23.03.22-25.03.22'),
                               SizedBox(width: 90,),
-                              Text('№ ЛК-131',style: TextStyle(color: Colors.blue, fontSize: 16),),
+                              Text('№ ЛК-131',style: TextStyle(color: AppColors.blue, fontSize: 16),),
                             ],
                           ),
                         ),
@@ -204,7 +206,7 @@ class _MyorderState extends State<Myorder> {
                                     ),
                                   );
                                 },
-                                child: Text('Подробнее...', style: TextStyle(color: Colors.black26),),
+                                child: Text('Подробнее...', style: TextStyle(color: AppColors.black26),),
                               )
                             ],
                           ),

@@ -1,3 +1,4 @@
+import 'package:cargo_app/styles/app_colors.dart';
 import 'package:cargo_app/styles/app_text_styles.dart';
 import 'package:flutter/material.dart';
 
@@ -27,7 +28,7 @@ class _TableActiveState extends State<TableActive> {
                         height: 38,
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
-                            color: Colors.green
+                            color: AppColors.green
                         ),
                         child: Center(child: Text('50 000 руб',style: AppTextStyles.textbottom,)),
                       ),
@@ -36,7 +37,7 @@ class _TableActiveState extends State<TableActive> {
 
                       Table(
 
-                        border: TableBorder.all(color: Colors.blue),
+                        border: TableBorder.all(color: AppColors.blue),
                         columnWidths: {
                           0: FractionColumnWidth(0.4),
 
@@ -47,7 +48,7 @@ class _TableActiveState extends State<TableActive> {
                               width: 155,
                               height: 50,
                               decoration: BoxDecoration(
-                                  color: Colors.blue,
+                                  color: AppColors.blue,
                                   borderRadius: BorderRadius.circular(10)
                               ),
                               child: Center(
@@ -58,7 +59,7 @@ class _TableActiveState extends State<TableActive> {
                               width: 155,
                               height: 50,
                               decoration: BoxDecoration(
-                                  color: Colors.blue,
+                                  color: AppColors.blue,
                                   borderRadius: BorderRadius.circular(10)
                               ),
                               child: Center(
@@ -69,7 +70,7 @@ class _TableActiveState extends State<TableActive> {
                               width: 155,
                               height: 50,
                               decoration: BoxDecoration(
-                                  color: Colors.blue,
+                                  color: AppColors.blue,
                                   borderRadius: BorderRadius.circular(10)
                               ),
                               child: Center(

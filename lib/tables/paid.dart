@@ -1,3 +1,4 @@
+import 'package:cargo_app/styles/app_colors.dart';
 import 'package:cargo_app/styles/app_text_styles.dart';
 import 'package:flutter/material.dart';
 
@@ -9,6 +10,23 @@ class Paid extends StatefulWidget {
 }
 
 class _PaidState extends State<Paid> {
+
+  Widget Tables(String date, ){
+    return Container(
+      width: 155,
+      height: 50,
+      decoration: BoxDecoration(
+        border: Border.all(
+            color:AppColors.black
+        ),
+        color: Colors.white,
+
+      ),
+      child: Center(
+        child: Text('24.02.22',style: TextStyle(color: AppColors.black),),
+      ),
+    );
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,21 +40,24 @@ class _PaidState extends State<Paid> {
             padding: const EdgeInsets.only(top: 32, left: 16, right: 16),
             child: Column(
               children: [
+                SizedBox(height: 11,),
                 Container(
                   width: 163,
                   height: 38,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
-                    color: Colors.green
+                    color: AppColors.green
                   ),
                   child: Center(child: Text('50 000 руб',style: AppTextStyles.textbottom,)),
                 ),
 
-    SizedBox(height: 11,),
+
+
+
 
     Table(
 
-    border: TableBorder.all(color: Colors.blue),
+    border: TableBorder.all(color: AppColors.blue),
     columnWidths: {
     0: FractionColumnWidth(0.4),
 
@@ -47,7 +68,7 @@ class _PaidState extends State<Paid> {
     width: 155,
     height: 50,
     decoration: BoxDecoration(
-    color: Colors.blue,
+    color: AppColors.blue,
     borderRadius: BorderRadius.circular(10)
     ),
     child: Center(
@@ -58,7 +79,7 @@ class _PaidState extends State<Paid> {
     width: 155,
     height: 50,
     decoration: BoxDecoration(
-    color: Colors.blue,
+    color: AppColors.blue,
     borderRadius: BorderRadius.circular(10)
     ),
     child: Center(
@@ -69,7 +90,7 @@ class _PaidState extends State<Paid> {
     width: 155,
     height: 50,
     decoration: BoxDecoration(
-    color: Colors.blue,
+    color: AppColors.blue,
     borderRadius: BorderRadius.circular(10)
     ),
     child: Center(
@@ -81,7 +102,7 @@ class _PaidState extends State<Paid> {
 
     ]),
 
-    buildRow(['Дата Отправки', 'Дата Получения', 'Рейс', ], isHeader: true),
+
     buildRow(['24.02.22', '26.02.22', 'SU 123', ]),
     buildRow(['24.02.22', '26.02.22', 'SU 123', ]),
     buildRow(['24.02.22', '26.02.22', 'SU 123', ]),

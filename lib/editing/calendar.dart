@@ -1,5 +1,6 @@
 
 
+import 'package:cargo_app/styles/app_colors.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -60,9 +61,9 @@ class _DatePickerDemoState extends State<DatePickerDemo> {
               child: Text(
                 'Select date',
                 style:
-                TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+                TextStyle(color: AppColors.black, fontWeight: FontWeight.bold),
               ),
-              color: Colors.greenAccent,
+              color: AppColors.greenAccent,
             ),
           ],
         ),

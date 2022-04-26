@@ -1,5 +1,6 @@
 
 
+import 'package:cargo_app/styles/app_colors.dart';
 import 'package:cargo_app/styles/app_text_styles.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -17,7 +18,7 @@ class _DutyState extends State<Duty> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Долг',style: TextStyle(color: Colors.red
+        title: Text('Долг',style: TextStyle(color: AppColors.mainRed
         ),),
       ),
       body: ListView(
@@ -40,9 +41,10 @@ class _DutyState extends State<Duty> {
                       height: 38,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
-                          color: Colors.red
+                          color: AppColors.mainRed
                       ),
-                      child: Center(child: Text('40 000 руб',style: AppTextStyles.textbottom,)),
+                      child: Center(child: Text('40 000 руб',style:
+                      AppTextStyles.textbottom,)),
                     ),
                  ),
 
@@ -53,7 +55,7 @@ class _DutyState extends State<Duty> {
                       width: 155,
                       height: 50,
                       decoration: BoxDecoration(
-                          color: Colors.blue,
+                          color: AppColors.blue,
                           borderRadius: BorderRadius.only(
                             topLeft:Radius.circular(10),
                             topRight: Radius.circular(10)
@@ -67,7 +69,7 @@ class _DutyState extends State<Duty> {
                       width: 155,
                       height: 50,
                       decoration: BoxDecoration(
-                          color: Colors.blue,
+                          color: AppColors.blue,
                           borderRadius:BorderRadius.only(
                               topLeft:Radius.circular(10),
                               topRight: Radius.circular(10)
@@ -81,7 +83,7 @@ class _DutyState extends State<Duty> {
                       width: 155,
                       height: 50,
                       decoration: BoxDecoration(
-                          color: Colors.blue,
+                          color: AppColors.blue,
                           borderRadius: BorderRadius.only(
                               topLeft:Radius.circular(10),
                               topRight: Radius.circular(10)
@@ -95,7 +97,7 @@ class _DutyState extends State<Duty> {
                       width: 155,
                       height: 50,
                       decoration: BoxDecoration(
-                          color: Colors.blue,
+                          color: AppColors.blue,
                           borderRadius: BorderRadius.only(
                               topLeft:Radius.circular(10),
                               topRight: Radius.circular(10)
@@ -116,13 +118,13 @@ class _DutyState extends State<Duty> {
                         height: 50,
                         decoration: BoxDecoration(
                           border: Border.all(
-                              color:Colors.black
+                              color:AppColors.black
                           ),
                             color: Colors.white,
 
                         ),
                         child: Center(
-                          child: Text('24.02.22',style: TextStyle(color: Colors.black),),
+                          child: Text('24.02.22',style: TextStyle(color: AppColors.black),),
                         ),
                       ),
                       Container(
@@ -131,11 +133,11 @@ class _DutyState extends State<Duty> {
                         decoration: BoxDecoration(
                           color: Colors.white,
                             border: Border.all(
-                                color:Colors.black
+                                color:AppColors.black
                             )
                         ),
                         child: Center(
-                          child: Text('26.02.22',style: TextStyle(color: Colors.black),),
+                          child: Text('26.02.22',style: TextStyle(color: AppColors.black),),
                         ),
                       ),
                       Container(
@@ -144,11 +146,11 @@ class _DutyState extends State<Duty> {
                         decoration: BoxDecoration(
                             color: Colors.white,
                             border: Border.all(
-                                color:Colors.black
+                                color: AppColors.black
                             )
                         ),
                         child: Center(
-                          child: Text('SU 123',style: TextStyle(color: Colors.black),),
+                          child: Text('SU 123',style: TextStyle(color: AppColors.black),),
                         ),
                       ),
                       Container(
@@ -157,11 +159,11 @@ class _DutyState extends State<Duty> {
                         decoration: BoxDecoration(
                             color: Colors.white,
                             border: Border.all(
-                                color:Colors.black
+                                color:   AppColors.black
                             )
                         ),
                         child: Center(
-                          child: Text('Сумма',style: TextStyle(color: Colors.black),),
+                          child: Text('Сумма',style: TextStyle(color: AppColors.black),),
                         ),
                       ),
                       SizedBox(height: 11,),
@@ -180,11 +182,11 @@ class _DutyState extends State<Duty> {
 
                           color: Colors.white,
                             border: Border.all(
-                                color:Colors.black
+                                color:  AppColors.black
                             )
                         ),
                         child: Center(
-                          child: Text('24.02.22',style: TextStyle(color: Colors.black),),
+                          child: Text('24.02.22',style: TextStyle(color: AppColors.black),),
                         ),
                       ),
                       Container(
@@ -204,24 +206,24 @@ class _DutyState extends State<Duty> {
                         decoration: BoxDecoration(
                           color: Colors.white,
                             border: Border.all(
-                                color:Colors.black
+                                color:  AppColors.black
                             )
                         ),
                         child: Center(
-                          child: Text('SU 123',style: TextStyle(color: Colors.black),),
+                          child: Text('SU 123',style: TextStyle(color: AppColors.black),),
                         ),
                       ),
                       Container(
                         width: 155,
                         height: 50,
                         decoration: BoxDecoration(
-                          color: Colors.white,
+                          color: AppColors.white,
                             border: Border.all(
-                                color:Colors.black
+                                color:AppColors.black
                             )
                         ),
                         child: Center(
-                          child: Text('Сумма',style: TextStyle(color: Colors.black),),
+                          child: Text('Сумма',style: TextStyle(color: AppColors.black),),
                         ),
                       ),
                       SizedBox(height: 11,),
@@ -239,11 +241,11 @@ class _DutyState extends State<Duty> {
 
                           color: Colors.white,
                             border: Border.all(
-                                color:Colors.black
+                                color:  AppColors.black
                             )
                         ),
                         child: Center(
-                          child: Text('24.02.22',style: TextStyle(color: Colors.black),),
+                          child: Text('24.02.22',style: TextStyle(color: AppColors.black),),
                         ),
                       ),
                       Container(
@@ -252,11 +254,11 @@ class _DutyState extends State<Duty> {
                         decoration: BoxDecoration(
                           color: Colors.white,
                             border: Border.all(
-                                color:Colors.black
+                                color:  AppColors.black
                             )
                         ),
                         child: Center(
-                          child: Text('26.02.22',style: TextStyle(color: Colors.black),),
+                          child: Text('26.02.22',style: TextStyle(color: AppColors.black),),
                         ),
                       ),
                       Container(
@@ -265,11 +267,11 @@ class _DutyState extends State<Duty> {
                         decoration: BoxDecoration(
                           color: Colors.white,
                             border: Border.all(
-                                color:Colors.black
+                                color:  AppColors.black
                             )
                         ),
                         child: Center(
-                          child: Text('SU 123',style: TextStyle(color: Colors.black),),
+                          child: Text('SU 123',style: TextStyle(color: AppColors.black),),
                         ),
                       ),
                       Container(
@@ -278,11 +280,11 @@ class _DutyState extends State<Duty> {
                         decoration: BoxDecoration(
                           color: Colors.white,
                             border: Border.all(
-                                color:Colors.black
+                                color:  AppColors.black
                             )
                         ),
                         child: Center(
-                          child: Text('Сумма',style: TextStyle(color: Colors.black),),
+                          child: Text('Сумма',style: TextStyle(color: AppColors.black),),
                         ),
                       ),
                       SizedBox(height: 11,),
@@ -300,11 +302,11 @@ class _DutyState extends State<Duty> {
 
                           color: Colors.white24,
                             border: Border.all(
-                                color:Colors.black
+                                color:  AppColors.black
                             )
                         ),
                         child: Center(
-                          child: Text('24.02.22',style: TextStyle(color: Colors.black),),
+                          child: Text('24.02.22',style: TextStyle(color: AppColors.black),),
                         ),
                       ),
                       Container(
@@ -313,11 +315,11 @@ class _DutyState extends State<Duty> {
                         decoration: BoxDecoration(
                           color: Colors.white24,
                             border: Border.all(
-                                color:Colors.black
+                                color:AppColors.black
                             )
                         ),
                         child: Center(
-                          child: Text('26.02.22',style: TextStyle(color: Colors.black),),
+                          child: Text('26.02.22',style: TextStyle(color: AppColors.black),),
                         ),
                       ),
                       Container(

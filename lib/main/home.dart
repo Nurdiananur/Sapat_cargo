@@ -1,4 +1,5 @@
 import 'package:cargo_app/if/if_incorect.dart';
+import 'package:cargo_app/styles/app_colors.dart';
 import 'package:cargo_app/tables/duty.dart';
 import 'package:cargo_app/tables/paid.dart';
 import 'package:flutter/cupertino.dart';
@@ -97,7 +98,7 @@ class _HomeState extends State<Home> {
                       height: 55,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
-                      color: Colors.green,
+                      color: AppColors.green,
                       ),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -137,7 +138,7 @@ class _HomeState extends State<Home> {
                         height: 55,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
-                        color: Colors.red,),
+                        color: AppColors.mainRed,),
                       child: Column(
                         crossAxisAlignment:CrossAxisAlignment.center,
                         mainAxisAlignment: MainAxisAlignment.center,

@@ -1,4 +1,5 @@
 import 'package:cargo_app/editing/editing.dart';
+import 'package:cargo_app/styles/app_colors.dart';
 import 'package:cargo_app/styles/app_text_styles.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -37,7 +38,7 @@ class _MyProfileState extends State<MyProfile> {
                child: Row(
                  children: [
                    Icon(Icons.person_outline_sharp,
-                   size: 30, color: Colors.blue,),
+                   size: 30, color: AppColors.blue,),
                    SizedBox(width: 20,),
                    Text('Марина Ивановна', style: AppTextStyles.profile,),
 
@@ -46,7 +47,7 @@ class _MyProfileState extends State<MyProfile> {
                ),
              ),
              const Divider(
-               color: Colors.black,
+               color: AppColors.black,
                indent: 20,
                endIndent: 20,
                thickness: 0.5,
@@ -58,13 +59,13 @@ class _MyProfileState extends State<MyProfile> {
             child:  Row(
                children: [
                  Icon(Icons.phone,
-                   size: 30, color: Colors.blue,),
+                   size: 30, color: AppColors.blue,),
                  SizedBox(width: 20,),
                  Text('+996 705 779 778', style: AppTextStyles.profile,),
                ],
               ),),
              Divider(
-               color: Colors.black,
+               color: AppColors.black,
                indent: 20,
                endIndent: 20,
                thickness: 0.5,
@@ -77,13 +78,13 @@ class _MyProfileState extends State<MyProfile> {
                child:  Row(
                  children: [
                    Icon(Icons.location_on_outlined,
-                     size: 30, color: Colors.blue,),
+                     size: 30, color: AppColors.blue,),
                    SizedBox(width: 20,),
                    Text('Кыргызстан, Бишкек', style: AppTextStyles.profile,),
                  ],
                ),),
              const Divider(
-               color: Colors.black,
+               color: AppColors.black,
                indent: 20,
                endIndent: 20,
                thickness: 0.5,
@@ -97,13 +98,13 @@ class _MyProfileState extends State<MyProfile> {
                child:  Row(
                  children: [
                    Icon(Icons.calendar_month,
-                     size: 30, color: Colors.blue,),
+                     size: 30, color: AppColors.blue,),
                    SizedBox(width: 20,),
                    Text('23-09-1995', style: AppTextStyles.profile,),
                  ],
                ),),
              Divider(
-               color: Colors.black,
+               color: AppColors.black,
                indent: 20,
                endIndent: 20,
                thickness: 0.5,
@@ -115,13 +116,13 @@ class _MyProfileState extends State<MyProfile> {
                child:  Row(
                  children: [
                    Icon(Icons.female,
-                     size: 30, color: Colors.blue,),
+                     size: 30, color: AppColors.blue,),
                    SizedBox(width: 20,),
                    Text('Жен', style: AppTextStyles.profile,),
                  ],
                ),),
              Divider(
-               color: Colors.black,
+               color: AppColors.black,
                indent: 20,
                endIndent: 20,
                thickness: 0.5,
@@ -142,7 +143,7 @@ class _MyProfileState extends State<MyProfile> {
       height: 50,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
-        color: Colors.blue
+        color: AppColors.blue
       ),
       child: Center(
         child: Text('Редактировать', style: AppTextStyles.textbottom,),

@@ -2,6 +2,7 @@
 import 'package:cargo_app/main/my_orders.dart';
 import 'package:cargo_app/main/sppage.dart';
 import 'package:cargo_app/main/home.dart';
+import 'package:cargo_app/styles/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -48,8 +49,8 @@ class _MainState extends State<Main> {
             child: BottomNavigationBar(
               elevation: 20,
               currentIndex: index,
-              selectedItemColor: Colors.blue,
-              unselectedItemColor: Colors.black,
+              selectedItemColor: AppColors.blue,
+              unselectedItemColor: AppColors.black,
               selectedFontSize: 12,
               unselectedFontSize: 12,
               onTap: (ind){
@@ -61,16 +62,16 @@ class _MainState extends State<Main> {
               BottomNavigationBarItem(icon: Icon(
                 Icons.search,
                 color: index == 0
-                    ? Colors.blue
-                    : Colors.black,
+                    ? AppColors.blue
+                    : AppColors.black,
               ),
                 label: 'Отследить'
               ),
                 BottomNavigationBarItem(icon: Icon(
                   Icons.location_on_outlined,
                   color: index == 1
-                      ? Colors.blue
-                      : Colors.black,
+                      ? AppColors.blue
+                      : AppColors.black,
                 ),
                   label: 'Пункты SP'
                 ),
@@ -82,8 +83,8 @@ class _MainState extends State<Main> {
                     'assets/icons/send.svg',
 
                   color: index == 2
-                      ? Colors.blue
-                      : Colors.black,  ),
+                      ? AppColors.blue
+                      : AppColors.black,  ),
 
                     label: 'Мои заказы'  ),
 
@@ -91,8 +92,8 @@ class _MainState extends State<Main> {
                 BottomNavigationBarItem(icon: Icon(
                   Icons.home_outlined,
                   color: index == 3
-                      ? Colors.blue
-                      : Colors.black,
+                      ? AppColors.blue
+                      : AppColors.black,
                 ),
                     label: 'Меню'
                 ),

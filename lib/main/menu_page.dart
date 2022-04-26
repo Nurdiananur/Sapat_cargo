@@ -10,6 +10,7 @@ import 'package:cargo_app/menu/my_order.dart';
 import 'package:cargo_app/menu/my_profil.dart';
 import 'package:cargo_app/menu/safity.dart';
 import 'package:cargo_app/menu/see_package.dart';
+import 'package:cargo_app/styles/app_colors.dart';
 import 'package:cargo_app/styles/app_text_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -48,7 +49,7 @@ class _MenuPageState extends State<MenuPage> {
                       Text('Марина Иванова',style: TextStyle(
                         fontWeight: FontWeight.w600,
                         fontSize: 16,
-                        color: Colors.black,)),
+                        color: AppColors.black,)),
                       Text('+996 705 779 778')
                     ],
                   ),
@@ -69,7 +70,7 @@ class _MenuPageState extends State<MenuPage> {
                   height: 50,
                   child: Row(
                     children: [
-                     Icon(Icons.person_outline,color: Colors.blue,),
+                     Icon(Icons.person_outline,color: AppColors.blue,),
                       Text('Мой профиль',style: AppTextStyles.profile ,)
                     ],
                   ),
@@ -90,7 +91,7 @@ class _MenuPageState extends State<MenuPage> {
                   height: 50,
                   child: Row(
                     children: [
-                      Icon(Icons.search,size: 30,color: Colors.blue,),
+                      Icon(Icons.search,size: 30,color: AppColors.blue,),
                       Text('Отследить отправления',style: AppTextStyles.profile ,)
                     ],
                   ),
@@ -111,7 +112,7 @@ class _MenuPageState extends State<MenuPage> {
                   height: 50,
                   child: Row(
                     children: [
-                      Icon(Icons.location_on_outlined,size: 30,color: Colors.blue,),
+                      Icon(Icons.location_on_outlined,size: 30,color: AppColors.blue,),
                       Text('Пункты Sapat Cargo',style: AppTextStyles.profile ,)
                     ],
                   ),
@@ -135,7 +136,7 @@ class _MenuPageState extends State<MenuPage> {
 
                       SvgPicture.asset(
                         'assets/icons/send.svg',
-                        color: Colors.blue,
+                        color: AppColors.blue,
                       ),
                       Text('Мои заказы',style: AppTextStyles.profile ,)
                     ],
@@ -162,7 +163,7 @@ class _MenuPageState extends State<MenuPage> {
                       //   'assets/icons/quest.svg',
                       //   color: Colors.blue,
                       // ),
-                      Icon(Icons.question_mark_outlined,color: Colors.blue,),
+                      Icon(Icons.question_mark_outlined,color: AppColors.blue,),
                       Text('Вопрос / Ответ',style: AppTextStyles.profile ,)
                     ],
                   ),
@@ -186,7 +187,7 @@ class _MenuPageState extends State<MenuPage> {
                     children: [
                       SvgPicture.asset(
                         'assets/icons/alert.svg',
-                        color: Colors.blue,
+                        color: AppColors.blue,
                       ),
                       Text('О компании',style: AppTextStyles.profile ,)
                     ],
@@ -212,7 +213,7 @@ class _MenuPageState extends State<MenuPage> {
                       //   'assets/icons/key.svg',
                       //
                       // ),
-                      Icon(Icons.shield_outlined,color: Colors.blue),
+                      Icon(Icons.shield_outlined,color: AppColors.blue),
                       Text('Политика конфиденциальности',style: AppTextStyles.profile ,)
                     ],
                   ),
@@ -238,7 +239,8 @@ class _MenuPageState extends State<MenuPage> {
                     // 'assets/icons/frame.svg',
                     // color: Colors.blue,
                     //   ),
-                      Icon(Icons.door_back_door_outlined,color: Colors.blue),
+                      Icon(Icons.door_back_door_outlined,
+                          color: AppColors.blue),
                       Text('Выйти',style: AppTextStyles.profile ,)
                     ],
                   ),
