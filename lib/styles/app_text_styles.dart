@@ -50,12 +50,38 @@ class AppTextStyles {
     fontWeight: FontWeight.w500,
     color: AppColors.hintColor,
   );
+  static TextStyle red18Medium = TextStyle(
+    fontSize: 18.sp,
+    fontFamily: 'SF Pro Display',
+    fontWeight: FontWeight.w500,
+    color: AppColors.redAppColor,
+  );
+
+  static TextStyle black18SemiBold = TextStyle(
+    fontSize: 18.sp,
+    fontFamily: 'SF Pro Display',
+    fontWeight: FontWeight.w600,
+    color: AppColors.black,
+  );
+
+  static TextStyle black18Medium = TextStyle(
+    fontSize: 18.sp,
+    fontFamily: 'SF Pro Display',
+    fontWeight: FontWeight.w500,
+    color: AppColors.black,
+  );
 
   static TextStyle white16Medium = TextStyle(
     fontSize: 16.sp,
     fontFamily: 'Gilroy',
     fontWeight: FontWeight.w500,
     color: AppColors.buttonTextColor,
+  );
+  static TextStyle white14Medium = TextStyle(
+    fontSize: 14.sp,
+    fontFamily: 'SF Pro Display',
+    fontWeight: FontWeight.w500,
+    color: AppColors.white,
   );
 
   static TextStyle mainColor16SemiBold = TextStyle(
@@ -71,6 +97,36 @@ class AppTextStyles {
     fontWeight: FontWeight.w400,
     color: AppColors.blackGrey,
   );
+  static TextStyle black12Regular = TextStyle(
+    fontSize: 12.sp,
+    fontFamily: 'SF Pro Display',
+    fontWeight: FontWeight.w400,
+    color: AppColors.blackGrey,
+  );
+
+
+
+  static TextStyle black12Medium = TextStyle(
+    fontSize: 12.sp,
+    fontFamily: 'SF Pro Display',
+    fontWeight: FontWeight.w500,
+    color: AppColors.mainBlack,
+  );
+
+  static TextStyle blackGrey10Regular = TextStyle(
+    fontSize: 10.sp,
+    fontFamily: 'SF Pro Display',
+    fontWeight: FontWeight.w400,
+    color: AppColors.hintColor,
+  );
+
+  static TextStyle blackGrey12Regular = TextStyle(
+    fontSize: 12.sp,
+    fontFamily: 'Gilroy',
+    fontWeight: FontWeight.w400,
+    color: AppColors.blackGrey,
+  );
+
 
 
   static TextStyle hometext = TextStyle(
@@ -93,6 +149,52 @@ class AppTextStyles {
     fontWeight: FontWeight.w600,
     color: AppColors.black,
   );
+
+
+
+  static TextStyle link16Medium = TextStyle(
+    fontSize: 16.sp,
+    fontFamily: 'Gilroy',
+    height: 1.2,
+    fontWeight: FontWeight.w500,
+    color: AppColors.mainColor,
+  );
+
+  static TextStyle black14Medium = TextStyle(
+    fontSize: 14.sp,
+    fontFamily: 'SF Pro Display',
+    fontWeight: FontWeight.w500,
+    color: AppColors.mainBlack,
+  );
+
+  static TextStyle black14Regular = TextStyle(
+    fontSize: 14.sp,
+    fontFamily: 'SF Pro Display',
+    fontWeight: FontWeight.w400,
+    color: AppColors.mainBlack,
+  );
+
+  static TextStyle blue16Medium = TextStyle(
+    fontSize: 16.sp,
+    fontFamily: 'SF Pro Display',
+    fontWeight: FontWeight.w500,
+    color: AppColors.mainColor,
+  );
+
+  static TextStyle white16Regular = TextStyle(
+    fontSize: 16.sp,
+    fontFamily: 'Gilroy',
+    fontWeight: FontWeight.w400,
+    color: AppColors.buttonTextColor,
+  );
+
+  static TextStyle black24SemiBold = TextStyle(
+    fontSize: 24.sp,
+    fontFamily: 'Gilroy',
+    fontWeight: FontWeight.w600,
+    color: AppColors.black,
+  );
+
   static TextStyle profile = TextStyle(
      fontWeight: FontWeight.w600,
      fontFamily: 'SF Pro Display',

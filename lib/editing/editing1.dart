@@ -1,6 +1,7 @@
 import 'package:cargo_app/editing/calendar.dart';
 import 'package:cargo_app/styles/app_text_styles.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class Editing1 extends StatefulWidget {
   const Editing1({Key? key}) : super(key: key);
@@ -67,14 +68,17 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        appBar: AppBar(
+          title: Text('Редактирование'),
+        ),
         body: SingleChildScrollView(
           child: Padding(
-            padding: const EdgeInsets.only(left: 16, right: 16, top: 32),
+            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 32),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SizedBox(height: 32),
-                Text('Имя'),
+                Text('Имя',style: AppTextStyles.black12Medium),
                 Container(
                   width: 343,
                   height: 50,
@@ -93,9 +97,10 @@ class _HomeState extends State<Home> {
 
                   ),
                 ),
-                SizedBox(height: 15,),
+                SizedBox(height: 15.h,),
 
-                Text('Фамилия'),
+                Text('Фамилия',style: AppTextStyles.black12Medium),
+                SizedBox(height: 4.h),
                 Container(
                   width: 343,
                   height: 50,
@@ -114,9 +119,9 @@ class _HomeState extends State<Home> {
 
                   ),
                 ),
-                SizedBox(height: 15,),
+                SizedBox(height: 15.h,),
 
-                Text('Номер телефона'),
+                Text('Номер телефона', style: AppTextStyles.black12Medium),
                 Container(
                   width: 343,
                   height: 50,
@@ -135,8 +140,8 @@ class _HomeState extends State<Home> {
 
                   ),
                 ),
-                SizedBox(height: 15,),
-                Text('Место проживания'),
+                SizedBox(height: 15.h,),
+                Text('Место проживания',style: AppTextStyles.black12Medium),
                 Container(
                   width: 343,
                   height: 50,
@@ -160,26 +165,14 @@ class _HomeState extends State<Home> {
 
 
                 SizedBox(height: 15,),
-
-
-
-
-
-
-
-                Text('Дата рождения') ,
-
-
-
-
-                    const SizedBox(
+                Text('Дата рождения',style: AppTextStyles.black12Medium) ,
+                const SizedBox(
                       height: 10.0,
                     ),
                     GestureDetector(
                       onTap: () => _selectDate(context),
                       child: Container(
-                        width: 343,
-                        height: 50,
+                        padding: EdgeInsets.symmetric(vertical: 16),
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
                             color:Color(0xffF3F3F3 )
@@ -187,7 +180,7 @@ class _HomeState extends State<Home> {
                         child: Center(
                           child: Text(
                             "${selectedDate.toLocal()}".split(' ')[0],
-                            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                            style: AppTextStyles.black16Medium,
                           ),
                         ),
                       )
@@ -199,12 +192,11 @@ class _HomeState extends State<Home> {
 
 
 
-                const SizedBox(height: 15,),
-                const Text('Пол'),
+                SizedBox(height: 15.h),
+                 Text('Пол',style: AppTextStyles.black12Medium),
 
             Container(
-              width: 343,
-              height: 80,
+
               child: Form(
                   key: _dropdownFormKey,
                   child: Column(

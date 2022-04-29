@@ -235,12 +235,10 @@ class _MenuPageState extends State<MenuPage> {
                   height: 50,
                   child: Row(
                     children: [
-                    //   SvgPicture.asset(
-                    // 'assets/icons/frame.svg',
-                    // color: Colors.blue,
-                    //   ),
-                      Icon(Icons.door_back_door_outlined,
-                          color: AppColors.blue),
+                      SvgPicture.asset(
+                    'assets/icons/frame.svg',
+                    color: Colors.blue,
+                      ),
                       Text('Выйти',style: AppTextStyles.profile ,)
                     ],
                   ),

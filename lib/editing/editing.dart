@@ -1,6 +1,7 @@
 import 'package:cargo_app/editing/editing1.dart';
 import 'package:cargo_app/styles/app_colors.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 
 class Editing extends StatefulWidget {

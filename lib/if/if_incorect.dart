@@ -1,5 +1,8 @@
 import 'package:cargo_app/if/search.dart';
+import 'package:cargo_app/styles/app_colors.dart';
+import 'package:cargo_app/styles/app_text_styles.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class IfIncorrect extends StatefulWidget {
   const IfIncorrect({Key? key}) : super(key: key);
@@ -18,7 +21,7 @@ class _IfIncorrectState extends State<IfIncorrect> {
       body: SingleChildScrollView(
         child: Center(
           child: Padding(
-            padding: const EdgeInsets.all(16),
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 32),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -53,32 +56,31 @@ class _IfIncorrectState extends State<IfIncorrect> {
                   ),
                 ),
                 Text('''Отслеживайте до 10 номеров одновременно-введите их, 
-разделяя запятыми'''),
+разделяя запятыми''',style: AppTextStyles.blackGrey12Regular),
                 SizedBox(height: 24,),
                 Text('''Вы указали некорректный номер
-для отслеживания''', style: TextStyle(color: Colors.red, fontSize:18),),
-                SizedBox(height: 16,),
+для отслеживания''', style: AppTextStyles.red18Medium,),
+                SizedBox(height: 24.h,),
                 Center(
                   child: Container(
-                    width: 342,
-                    height: 145,
+
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      color: Color(0xffF3F3F3)
+                        color: AppColors.filColor
                     ),
                     child: Center(
                       child: Padding(
                         padding: const EdgeInsets.all(16),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const [
-                            Text('Как  воспользоваться?', style: TextStyle(fontSize: 18),),
+                          children: [
+                            Text('Как  воспользоваться?',  style: AppTextStyles.black18SemiBold,),
                             SizedBox(height: 8,),
                             Text(
            '''На этой странице можно отслеживать
 международные отправления. Для этого введите
 в поле номер накладной, состоящей из 7
-символов, и нажмите на “Поиск”.''')
+символов, и нажмите на “Поиск”.''', style: AppTextStyles.black14Medium,)
 
                           ],
                         ),
